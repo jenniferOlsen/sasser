@@ -64,11 +64,13 @@
 %overflow-hidden {
   overflow: hidden;
 }
+
+// Requires "compass/css3/box-sizing" in style.scss
 %border-box {
-  @include box-sizing(border-box); // Requires "compass/css3/box-sizing"
+  @include box-sizing(border-box); 
 }
 %content-box {
-  @include box-sizing(content-box); // Requires "compass/css3/box-sizing"
+  @include box-sizing(content-box);
 }
 
 // Typography
