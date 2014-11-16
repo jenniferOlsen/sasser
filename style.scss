@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////////////////////////////
+// Page Styling
+// --------------------
+// This file combines all partials into one main style sheet, to be loaded on
+// all pages.
+// 
+// Requires Compass and sass-globbing
+////////////////////////////////////////////////////////////////////////////////
+
+// Third-party libraries
+@import "compass/css3/box-sizing";
+@import "compass/css3";
+@import "compass/utilities";
+@import "third-party/*/**";
+
+// Base styles
+@import "base/vars";
+@import "base/properties";
+@import "base/mixins";
+@import "base/*/**";
+
+// Custom Theme
+@import "layout/*/**";
+@import "theme/*/**";

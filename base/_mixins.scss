@@ -1,0 +1,26 @@
+@mixin position-absolute($top,$left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin position-relative($top,$left) {
+  @extend %position-relative;
+  top: $top;
+  left: $left;
+}
+// uses Bootstrap defaults
+@mixin breakpoint($point) {
+  @if $point == phone {
+    @media (max-width: 765px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 766px) and (max-width: 992px) { @content; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == allmobile {
+    @media (max-width: 991px) { @content }
+  }
+}

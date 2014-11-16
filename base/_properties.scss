@@ -1,0 +1,95 @@
+// Spacing - resets and full
+%margin-reset {
+  margin: 0;
+}
+%padding-reset {
+  padding: 0;
+}
+%full-width {
+  width: 100%;
+}
+%full-height {
+  height: 100%;
+}
+
+// Positioning
+%margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+%floatleft {
+  float: left;
+}
+%floatright {
+  float: right;
+}
+%floatnone {
+  float: none;
+  clear: both;
+}
+
+// Display
+%display-block {
+  display: block;
+}
+%display-inline {
+  display: inline;
+}
+%display-inline-block {
+  display: inline-block;
+}
+%display-list {
+  display: list-item;
+}
+%display-none {
+  display: none;
+}
+%pointer {
+  cursor: pointer;
+}
+%no-list {
+  list-style-image:none;
+  list-style:none;
+  list-style-type:none;
+}
+%position-relative {
+  position: relative;
+}
+%overflow-hidden {
+  overflow: hidden;
+}
+%border-box {
+  @include box-sizing(border-box); // Requires "compass/css3/box-sizing"
+}
+%content-box {
+  @include box-sizing(content-box); // Requires "compass/css3/box-sizing"
+}
+
+// Typography
+%align-right {
+  text-align: right;
+}
+%align-left {
+  text-align: left;
+}
+%align-center {
+  text-align: center;
+}
+%italic-font {
+  font-style: italic;
+}
+%underline-text {
+  text-decoration: underline;
+}
+%no-decoration {
+  text-decoration: none;
+}
+%uppercase {
+  text-transform: uppercase;
+}
+%capitalize {
+  text-transform: capitalize;
+}
+%no-transform {
+  text-transform: none;
+}
