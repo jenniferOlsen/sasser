@@ -53,7 +53,7 @@
   border-right: 5px solid $arrowColor;
   border-bottom: 4px solid transparent;
 }
-// uses Bootstrap defaults
+// Breakpoints - uses Bootstrap defaults
 @mixin breakpoint($point) {
   @if $point == phone {
     @media (max-width: 765px) { @content; }
