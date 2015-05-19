@@ -1,0 +1,24 @@
+// Positioning
+%margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+%centered { //centers in browser
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// Reset any list styles
+%no-list {
+  list-style-image:none;
+  list-style:none;
+  list-style-type:none;
+}
+// Requires "compass/css3/box-sizing" in style.scss
+%border-box {
+  @include box-sizing(border-box); 
+}
+%content-box {
+  @include box-sizing(content-box);
+}
