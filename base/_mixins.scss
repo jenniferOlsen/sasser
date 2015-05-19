@@ -3,11 +3,55 @@
   top: $top;
   left: $left;
 }
-
 @mixin position-relative($top,$left) {
-  @extend %position-relative;
+  position: relative;
   top: $top;
   left: $left;
+}
+// CSS arrows
+@mixin arrow-down ($arrowColor){
+  content: ".";
+  display: block;
+  font-size: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-top: 6px solid $arrowColor;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+@mixin arrow-up ($arrowColor){
+  content: ".";
+  display: block;
+  font-size: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-top: 6px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid $arrowColor;
+}
+@mixin arrow-right ($arrowColor){
+  content: ".";
+  display: block;
+  font-size: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid $arrowColor;
+  border-top: 4px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+@mixin arrow-left ($arrowColor){
+  content: ".";
+  display: block;
+  font-size: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-top: 4px solid transparent;
+  border-right: 5px solid $arrowColor;
+  border-bottom: 4px solid transparent;
 }
 // uses Bootstrap defaults
 @mixin breakpoint($point) {
